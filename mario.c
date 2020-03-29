@@ -14,9 +14,9 @@ int main(void)
     // draw the pyramid
     for (int i = 0; i < h; i++)
     {
-        for (int p = 0; p < h + 1 ; p++)
+        for (int p = 1; p < h + 1; p++)
         {
-            if (p + i < h - 1)
+            if (p + i < h)
                 printf(" ");
             else
                 printf("#");

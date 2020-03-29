@@ -7,16 +7,16 @@ int main(void)
     do
     {
         //Asking for input of height of pyramid
-        h = get_int("What is the height of the pyramid:\n\n");
+        h = get_int("What is the height of the pyramid:\n");
     }
-    while(h < 1 || h > 8);
+    while (h < 1 || h > 8);
 
     // draw the pyramid
-    for (int i = 0;i < h; i++)
+    for (int i = 0; i < h; i++)
     {
-        for(int p = 0; p < h + 1 ;p++)
+        for (int p = 0; p < h + 1 ; p++)
         {
-            if(p + i < h)
+            if (p + i < h - 1)
                 printf(" ");
             else
                 printf("#");

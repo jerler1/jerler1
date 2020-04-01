@@ -17,11 +17,14 @@ int main(void)
     string text = get_string("Please input text to be evaluated: \n");
     printf("Text: %s\n", text);
     printf("%i letter(s).\n", count_letters(text)); //made a function and inputed string text to count the LETTERS.  works.
-    printf("%i word(s).\n", count_words(text)); // made a function and inputed string text to count the WORDS. works
+    printf("%i word(sc).\n", count_words(text)); // made a function and inputed string text to count the WORDS. works
     printf("%i sentence(s).\n", count_sentences(text)); //made a function and inputed string text to count the SENTENCES. works.
 
-    float l = (100.0 * count_letters(text) / count_words(text));
-    float s = (100.0 * count_sentences(text) / count_words(text));
+    float l = (100.0 * (float) letters / words);
+    float s = (100.0 * (float) sentences / words);
+
+    printf("Value for l is %f\n", l);
+    printf("Value for s is %f\n", s);
 
     float index = (0.0588 * l) - (0.296 * s) - 15.8;
     if (index >= 1 && index < 16)
